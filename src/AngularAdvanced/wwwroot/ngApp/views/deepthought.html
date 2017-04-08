@@ -1,0 +1,10 @@
+﻿<h2>The Answer to Life, the Universe, and Everything:</h2>
+
+<button ng-click="controller.getAnswer()" ng-disabled="controller.loaded===false">
+    Get Answer
+    <i class="fa fa-refresh fa-spin" ng-show="controller.loaded===false"></i>
+</button>
+
+<output ng-show="controller.loaded">
+    {{controller.answer.text}}
+</output>

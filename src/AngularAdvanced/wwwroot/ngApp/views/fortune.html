@@ -1,0 +1,13 @@
+﻿<h2>Fortune:</h2>
+
+<button ng-click="controller.getAnswer()" ng-disabled="controller.loaded===false">
+    Get Fortune
+</button>
+
+<img class="fa fa-refresh" src="../../images/ajax-loader.gif"  ng-show="controller.loaded===false"/>
+<!--<i class="fa fa-refresh fa-spin" ng-show="controller.loaded===false"></i>-->
+
+
+<output ng-show="controller.loaded">
+    {{controller.answer.text}}
+</output>
